@@ -1,0 +1,388 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700')
+
+@import 'bootstrap'
+
+@import 'carousel'
+
+$primary-color-dark:   #00796B
+$primary-color:        #009688
+$primary-color-light:  #B2DFDB
+$primary-color-text:   #FFFFFF
+$accent-color:         #FF9800
+$primary-text-color:   #212121
+$secondary-text-color: #757575
+$divider-color:        #BDBDBD
+
+body
+  font-family: "Open Sans", sans-serif
+  background-color: $primary-color-text
+  margin: 0
+  padding: 0
+
+/* HEADER */
+.navbar
+  min-height: 100px
+  border: none
+
+.navbar-default
+  background-color: $primary-color-text
+
+  .container
+    padding-top: 25px
+    padding-bottom: 25px
+
+    .navbar-brand
+      padding: 0
+
+      img
+        display: inline
+        vertical-align: middle
+
+      .logo-text
+        font-size: 42px
+        font-weight: 700
+        color: rgba($primary-text-color, .8)
+        vertical-align: middle
+
+
+.navbar-default .navbar-nav > li > a 
+  text-transform: uppercase
+  color: rgba($primary-text-color, .8)
+  font-weight: 700
+
+  &:focus,
+  &:hover
+    color: $primary-color
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus
+  color: $primary-color
+  background-color: $primary-color-text
+
+@media screen and (max-width: 767px)
+  .navbar-default .navbar-toggle
+    margin-top: .8em
+    border-color: $primary-color
+
+    .icon-bar
+        background-color: $primary-color
+
+    &:hover, &:focus, &:visited, &:active
+        background-color: $primary-color-text
+
+  .navbar-default .container
+    padding-bottom: 0
+
+  .navbar-brand
+    margin-left: 25px
+
+@media screen and (max-width: 500px)
+  .img-responsive
+    image-rendering: -moz-crisp-edges
+    image-rendering: -o-crisp-edges
+    image-rendering: -webkit-optimize-contrast
+    image-rendering: crisp-edges
+    -ms-interpolation-mode: nearest-neighbor
+  
+  .carousel-inner > .item > img,
+  .carousel,
+  .carousel-inner
+    height: 530px
+
+@media screen and (max-width: 370px)
+  .navbar-default .container .navbar-brand .logo-text
+    font-size: 32px
+
+/* MARKETING */
+.marketing 
+  h2
+    color: $primary-text-color
+    font-size: 24px
+    margin-top: 30px
+    padding-bottom: 0
+    text-transform: uppercase
+    font-weight: 600
+    text-align: center
+
+  hr
+    width: 30%
+    background-color: $primary-color
+    height: 2px
+    margin-top: 15px
+    margin-bottom: 50px
+
+  h3
+    color: rgba($primary-text-color, .9)
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 600
+    margin-bottom: 20px
+    text-align: center
+
+  p
+    line-height: 1.75
+
+.fa-balance-scale,
+.fa-handshake-o,
+.fa-calculator
+  color: $primary-color
+
+.btn-detaljno, 
+.btn-link
+  color: $primary-color
+  background-color: $primary-color-text
+  margin: 25px 0
+  font-weight: 500
+  border-radius: 0
+  border: 2px solid $primary-color
+  font-weight: 600
+
+  &:visited
+    color: $primary-color-text
+    background-color: $primary-color
+    border: 2px solid $primary-color
+    text-decoration: none
+
+  &:focus
+    color: $primary-color-text
+    background-color: $primary-color
+    border: 2px solid $primary-color
+    text-decoration: none
+
+  &:hover
+    color: $primary-color-text
+    background-color: $primary-color
+    border: 2px solid $primary-color
+    text-decoration: none
+
+  &:active
+    color: $primary-color-text
+    background-color: $primary-color
+    border: 2px solid $primary-color
+    text-decoration: none
+
+/* FOOTER */
+footer
+  margin-top: 25px
+  height: 380px
+  padding: 40px, 25px
+  background-color: $primary-text-color
+
+  h3
+    color: rgba($primary-color-text, .6)
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 700
+    margin-bottom: 20px
+    text-align: center
+
+  p
+    color: $primary-color-text
+    font-size: 15px
+    letter-spacing: 1px
+    font-weight: 300
+
+    a
+      color: $primary-color-text
+
+      &:visited,
+        color: $primary-color-text
+
+      &:focus,
+      &:hover
+        color: $primary-color
+        text-decoration: none
+      
+      &:active
+        color: $primary-color-text
+
+  .info
+    padding: 70px 0
+
+    .info-child
+      text-align: center
+
+      .info-text
+        display: inline-block
+        text-align: left
+
+.panel-footer
+  background-color: $primary-text-color
+  border-top: 0.5px solid $secondary-text-color
+  color: rgba($primary-color-text, .8)
+  font-size: 13px
+  padding-top: 15px
+  padding-bottom: 15px
+
+@media screen and (max-width: 992px)
+  footer 
+    height: 600px
+  
+    .info
+      padding: 20px 0
+  
+  footer .info .info-child .info-text
+    text-align: center
+
+  .panel-footer
+    padding: 20px 0
+
+
+/* O NAMA */
+.o-nama
+  padding-top: 120px
+
+  .naslov
+    margin-top: 25px
+
+    h2
+      color: $primary-text-color
+      font-size: 24px
+      margin-top: 30px
+      padding-bottom: 0
+      text-transform: uppercase
+      font-weight: 600
+      text-align: center
+
+    hr
+      width: 40%
+      background-color: $primary-color
+      height: 2px
+      margin-top: 15px
+      margin-bottom: 50px
+  
+  p
+    line-height: 1.75
+    font-size: 18px
+  
+  .drugi
+    margin-bottom: 40px
+  
+  img
+    border: 2px solid $primary-color
+
+/* USLUGE */
+.usluge
+  padding-top: 120px
+
+  .naslov
+    margin-top: 25px
+
+  h2
+    color: $primary-text-color
+    font-size: 24px
+    margin-top: 30px
+    padding-bottom: 0
+    text-transform: uppercase
+    font-weight: 600
+    text-align: center
+
+  hr
+    width: 45%
+    background-color: $primary-color
+    height: 2px
+    margin-top: 15px
+    margin-bottom: 30px
+  
+  p,
+  ul
+    line-height: 1.75
+    font-size: 18px
+
+  .linkovi
+    margin-top: 50px
+  
+    .btn-link
+      width: 90%
+      padding: 30px 0
+      font-size: 22px
+      margin: 10px 0
+
+
+/* KONTAKT */
+article 
+  margin-top: 100px
+  margin-bottom: 30px
+
+.form-title 
+  h2
+    color: $primary-text-color
+    font-size: 24px
+    margin-top: 30px
+    padding-bottom: 0
+    text-transform: uppercase
+    font-weight: 600
+    text-align: center
+
+  hr
+    width: 40%
+    background-color: $primary-color
+    height: 2px
+    margin-top: 15px
+    margin-bottom: 50px
+
+.mail
+  margin-bottom: 50px
+
+  .control-group
+    margin-top: 14px
+
+    .form-control
+      border-radius: 0px
+      border: 2px solid rgba($primary-color, .6)
+
+      &:focus
+        border-color: $primary-color
+        box-shadow: none
+
+  .btn
+    background-color: $primary-color-text
+    color: $primary-color
+    border: 2px solid $primary-color !important
+    border-style: none
+    font-size: 16px
+    margin-top: 20px
+    font-weight: 700
+    text-transform: uppercase
+    border-radius: 0px
+
+    &:visited
+      color: $primary-color-text
+      background-color: $primary-color
+      border: 2px solid $primary-color
+
+    &:focus
+      color: $primary-color-text
+      background-color: $primary-color
+      border: 2px solid $primary-color
+
+    &:hover
+      color: $primary-color-text
+      background-color: $primary-color
+      border: 2px solid $primary-color
+
+    &:active
+      color: $primary-color-text
+      background-color: $primary-color
+      border: 2px solid $primary-color
+
+.kontakt
+  margin-bottom: 40px
+  letter-spacing: 1px
+
+  .fa-map-marker,
+  .fa-phone,
+  .fa-envelope-o
+    color: $primary-color
+
+  .kontakt-title h4
+    font-size: 14px
+    font-weight: 700
+    margin-bottom: 20px
+
+  .kontakt-info
+    line-height: 1
+
